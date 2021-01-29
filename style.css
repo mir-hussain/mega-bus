@@ -123,6 +123,8 @@ nav ul li a:hover, a.active{
     justify-content: space-between;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ My Updates ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 /* to hide up and down arrows in number input tag (you know it's annoying as hell and we are going to do it with javaScript anyways */
 
 /* For Chrome, Safari, Edge, Opera */
@@ -135,4 +137,12 @@ input::-webkit-inner-spin-button {
 /*For Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.plus-minus-btn> button {
+    border: none;
+    color: blue;
+    background-color: #ddd;
+    height: 30px;
+    width: 30px;
 }

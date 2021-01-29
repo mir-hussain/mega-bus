@@ -31,7 +31,9 @@
 
         <div class="booking-content">
             <h1>Mega City Bus</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
         </div>
 
 
@@ -40,42 +42,48 @@
 
             <div class="inputs">
                 <div class="input-group">
-                    <label" >From</label>
-                    <input class="inp-style" type="text" name="" placeholder="Dhaka">
+                    <label">From</label>
+                        <input class="inp-style" type="text" name="" placeholder="Dhaka">
                 </div>
                 <div class="input-group">
-                    <label" >From</label>
-                    <input class="inp-style" type="text" name="" placeholder="Chittagone">
+                    <label">From</label>
+                        <input class="inp-style" type="text" name="" placeholder="Chittagone">
                 </div>
             </div>
 
             <div class="inputs">
                 <div class="input-group">
-                    <label" >Departure</label>
-                    <input class="inp-style" type="date" name="">
+                    <label">Departure</label>
+                        <input class="inp-style" type="date" name="">
                 </div>
                 <div class="input-group">
-                    <label >Return</label>
+                    <label>Return</label>
                     <input class="inp-style" type="date" name="">
                 </div>
             </div>
             <div class="inputs">
                 <div class="input-group f-class">
-                <div>
-                    <label >First Class ($150)</label>
-                    <input id="first-calss-counter " class="inp-style inp-width" type="number" readonly>
-                </div>
-                <div class="plus-minus-btn">
-                    <p>+ -</p>
-                </div>
-            </div>
-                <div class="input-group f-class">
+                    <div class="plus-minus-btn">
+                       <button class="decrease-counter" >-</button>
+                    </div>
                     <div>
-                        <label >Economy ($100)</label>
-                        <input id="economy-counter" class="inp-style inp-width" type="number" readonly>
+                        <label>First Class ($150)</label>
+                        <input id="first-class-counter" class="inp-style inp-width" type="number" value="0" readonly>
                     </div>
                     <div class="plus-minus-btn">
-                        <p> <span>+</span> <span>-</span> </p>
+                        <button class="increase-counter">+</button>
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div class="plus-minus-btn">
+                        <button class="decrease-counter">-</button>
+                    </div>
+                    <div>
+                        <label>Economy ($100)</label>
+                        <input id="economy-counter" class="inp-style inp-width" type="number" value="0" readonly>
+                    </div>
+                    <div class="plus-minus-btn">
+                        <button class="increase-counter">+</button>
                     </div>
                 </div>
 
@@ -99,6 +107,7 @@
                     </div>
                 </div>
                 <hr>
+                <br>
                 <div class="amount">
                     <div class="left">
                         <h4>Total</h4>
