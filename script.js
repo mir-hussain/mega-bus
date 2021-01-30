@@ -1,5 +1,4 @@
-document.querySelector("#first-class-counter").value = 0;
-document.querySelector("#economy-counter").value = 0;
+///////////////////// Booking Section (Main part of assignment) ///////////////////////
 
 function counterUpdater(counterId, action) {
   const counter = parseInt(document.querySelector(counterId).value);
@@ -85,3 +84,40 @@ const economyDecreaseButton = decreaseButton[1].addEventListener(
     total();
   }
 );
+
+//////////////////Book Now button (Bonus part of assignment)///////////////
+
+function displayUpdater() {
+  document.querySelector(".booking-content").style.display = "none";
+  document.querySelector(".booking-form").style.display = "none";
+  document.querySelector(".main-content").style.display = "block";
+  document.querySelector(".confirmation-area").style.display = "flex";
+}
+
+const bookNowButton = document
+  .querySelector("#book-now-button")
+  .addEventListener("click", function () {
+    const form = document.querySelector("#from").value;
+    const to = document.querySelector("#to").value;
+    const departureDate = document.querySelector("#departure-date").value;
+    const firstClassTicketQuantity = document.querySelector(
+      "#first-class-counter"
+    ).value;
+    const economyTicketQuantity = document.querySelector("#economy-counter")
+      .value;
+    const total = document.querySelector("#total").innerText;
+    if(form === "" || to === "" || departureDate === "") {
+      alert("You have to input value in stared sections.")
+    }
+    else {
+    displayUpdater();
+    document.querySelector("#message")
+      .append("You are travelling from " + form + " to " + to + " on " + departureDate + " ." + "You purchased " + firstClassTicketQuantity + " First Class ticket(s) and " + economyTicketQuantity + " Economy ticket(s)." + "Your grand total (with vat) is " + total + " $ .");
+    }
+  });
+
+document.querySelector("#first-class-counter").value = 0;
+document.querySelector("#economy-counter").value = 0;
+document.querySelector("#from").value = '';
+document.querySelector("#to").value = '';
+document.querySelector("#departure-date").value = 0;

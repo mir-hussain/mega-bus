@@ -7,6 +7,7 @@
     <title>Bus Ticket</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <!-- Stylesheet -->
@@ -42,23 +43,23 @@
 
             <div class="inputs">
                 <div class="input-group">
-                    <label">From</label>
-                        <input class="inp-style" type="text" placeholder="Dhaka">
+                    <label">From*</label>
+                        <input id="from" class="inp-style" type="text" placeholder="Dhaka">
                 </div>
                 <div class="input-group">
-                    <label">From</label>
-                        <input class="inp-style" type="text" placeholder="Chittagong">
+                    <label">To*</label>
+                        <input id="to" class="inp-style" type="text" placeholder="Chittagong">
                 </div>
             </div>
 
             <div class="inputs">
                 <div class="input-group">
-                    <label">Departure</label>
-                        <input class="inp-style" type="date">
+                    <label">Departure*</label>
+                    <input id="departure-date" class="inp-style" type="date">
                 </div>
                 <div class="input-group">
                     <label>Return</label>
-                    <input class="inp-style" type="date">
+                    <input id="return-date" class="inp-style" type="date">
                 </div>
             </div>
             <div class="inputs">
@@ -80,7 +81,7 @@
                     </div>
                     <div>
                         <label>Economy ($100)</label>
-                        <input id="economy-counter" class="inp-style inp-width" type="number" value="0" readonly>
+                        <input id="economy-counter" class="inp-style inp-width" type="number" value="0" readonly >
                     </div>
                     <div class="plus-minus-btn">
                         <button class="increase-counter">+</button>
@@ -117,8 +118,15 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book-now-button" class="btn-style">Book Now</button>
         </div>
+        <div class="confirmation-area">
+            <div id="confirmation-box">
+                <p id="message"> </p>
+                <p>Thank you for traveling with us. We hope you have a pleasant journey.</p>
+            </div>
+        </div>
+        
     </main>
 
     <script src="script.js"></script>
