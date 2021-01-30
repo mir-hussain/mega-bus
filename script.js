@@ -107,12 +107,12 @@ const bookNowButton = document
       .value;
     const total = document.querySelector("#total").innerText;
     if(form === "" || to === "" || departureDate === "") {
-      alert("You have to input value in stared sections.")
+      alert("You have to input value in the stared sections.")
     }
     else {
     displayUpdater();
     document.querySelector("#message")
-      .append("You are travelling from " + form + " to " + to + " on " + departureDate + " ." + "You purchased " + firstClassTicketQuantity + " First Class ticket(s) and " + economyTicketQuantity + " Economy ticket(s)." + "Your grand total (with vat) is " + total + " $ .");
+      .append("You are travelling from " + form + " to " + to + " on " + departureDate + " ." + "You have purchased " + firstClassTicketQuantity + " First Class ticket(s) and " + economyTicketQuantity + " Economy ticket(s)." + "Your grand total (with vat) is " + total + " $ .");
     }
   });
 
